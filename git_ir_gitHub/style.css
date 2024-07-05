@@ -11,8 +11,11 @@ body {
   background-size: cover;
   background-position: center;
   text-align: center;
+}
 
-  margin: 10px;
+section{
+  padding: 0 20px;
+  background: url("/git_ir_gitHub/resources/bg-overlay.png") #00000050;
 }
 
 .mainPage {
@@ -71,16 +74,33 @@ body {
   }
 }
 
-/* INTRO TAB ------------------------------------- */
-.tab {
+/* TAB styling  ------------------------------------- */
+.tab{
   text-transform: none;
   text-align: left;
 
   >div {
+    margin: 10px 0;
     padding: 30px;
     background-color: #222222cc;
 
+    >img{
+      display: inline-block;
+      transition: all 0.3s ease-in-out 0s;
+      /* position: relative; */
+      float: right;
+      top:0;
+      width: 20px;
+    }
+
+    >img:hover{
+      transition: all 0.3s ease-in-out 0s;
+      transform: rotate(90deg);
+      cursor: pointer;
+    }
+
     >h2{
+      display: inline-block;
       margin: 0;
       font-weight: 500;
       text-decoration: underline;
@@ -95,7 +115,6 @@ body {
         }
       >img{
         width: 100%;
-        /* object-fit: contain; */
       }
     }
     >p{
@@ -103,9 +122,10 @@ body {
       line-height: 1.5rem;
     }
 
-  }
-
+    }
 }
+
+
 
 /* DESKTOP STILIZAVIMAS--------------------------------------------------------- */
 @media screen and (min-width: 768px) {
