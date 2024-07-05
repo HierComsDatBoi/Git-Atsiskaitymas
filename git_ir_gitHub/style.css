@@ -71,10 +71,6 @@ body {
   }
 }
 
-.hidden {
-  display: none;
-}
-
 /* INTRO TAB ------------------------------------- */
 .tab {
   text-transform: none;
@@ -171,4 +167,8 @@ body {
         margin-bottom: 50px;
       }
   }
+}
+
+.hidden {
+  display: none;
 }
